@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIRIT8</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assest/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assest/css/col-5-bootstrap.css">
+    <script src="https://use.fontawesome.com/aefde2071a.js"></script>
+    <link rel="stylesheet" href="assest/css/flexslider.css">
+    <link href="assest/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assest/css/control.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <div class="controlplatform">
+        <button type="button" class="menu-platform" data-toggle="collapse" data-target="#main-menu-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <div class="platform">
+            <div class="change-header-color">
+                <h3>Цвет шапки</h3>
+                <ul>
+                    <li class="yellow-control" data-color="#ffad00"></li>
+                    <li class="orange-control" data-color="#ff6d00"></li>
+                    <li class="red-control" data-color="#de002b"></li>
+                    <li class="purpure-control" data-color="#b82945"></li>
+                    <li class="orchid-control" data-color="#d75cb6"></li>
+                    <li class="navy-control" data-color="#006dca"></li>
+                    <li class="blue-control" data-color="#01aae3"></li>
+                    <li class="green-sea-control" data-color="#01b1af"></li>
+                    <li class="green-control" data-color="#009f4f"></li>
+                    <li class="irish-green-control" data-color="#6db900"></li>
+                    <li class="black-control" data-color="#111"></li>
+                    <li class="custom">
+                        <form name="customColor" action="return(false);">
+                            <input type="text" value="#" placeholder="#ffffff" name="go">
+                        </form>        
+                    </li>
+            
+                    
+                </ul>
+                <div style="clear:both"></div>
+                <h3>Го выберем изображение для шапки?</h3>
+                <form name='FormFileHeader' class="select-file">
+                     <label>
+                          <input type="file" onchange="processFiles(this.files)"  name="selectFile">
+                          <span>Выберите файл</span>
+                     </label>
+                     
+                </form>
+                <div class="dop-setting">
+                        <h5>Доп. настройки</h5>
+                         <input type="checkbox" checked onchange="trycheck()" id="try" >Будем повторять?<br>
+                         <input type="checkbox" onchange="sizecheck()" id="sizecheck" >Или го растянем?
+                </div>
+            </div>
+        </div>
+   </div>
+    <div class="control-arrow">
+          <img src="assest/img/arrow-main.png" width="250px" alt="">
+          <span>Ну, наведи, если че)</span>
+    </div>
+    <div class="control-arrow-complete">
+          <img src="assest/img/arrow-main-complete.png" width="250px" alt="">
+          <span>Опа! Красаучик! А теперь тацкни сюда</span>
+    </div>
+    <header>
+      <div class="container">
+       <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SPIRIT8</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="main-menu-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Portfolio</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+        <h1>Welcome on <span>spirit8</span></h1>
+        <p>We are a digital agency with <span>years of experience</span> and with <span>extraordinary people</span></p>
+        <a class="headerarrow" href="#about"><img src="assest/img/header-arrow.png" alt=""></a>
+    </div>
+    </header>
+    
+    <div class="aboutUs" id="about">
+       <div class="container">
+          <div class="row">
+           <div class="col-md-6">
+        <img class="img-responsive about-us-img" src="assest/img/comp-view-works.png" alt="">
+        </div>
+        <div class="col-md-6">
+        <div class="about-us-desc">
+            <h3>About us</h3>
+            <h1 class="black">Some words <span>about us</span></h1>
+            <div class="bord"></div>
+            <p>We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+            <ul>
+                <li>Mission - <span>We deliver uniqueness and quality</span></li>
+                <li>Skills - <span>Delivering fast and excellent results</span></li>
+                <li>Clients - <span>Satisfied clients thanks to our experience</span></li>
+            </ul>
+            <a href="#works" class="view-works"><img src="assest/img/our-works-button.png" alt="">Browse our work</a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="ourteam">
+        <h1 class="white">Meet <span>our team</span></h1>
+        <div class="bordlongtitle"></div>
+        <div class="bordtitle"></div>
+        <div class="container">
+        <div class="row team">
+           <div class="slider">
+            <div class="flexslider">
+              <ul class="slides">
+               <li>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Jason Statham</h3>
+                    <h4>Knife designer</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Van Damme</h3>
+                    <h4>No English</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Sylvester Stallone</h3>
+                    <h4>Cigar Lover</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Jet Li</h3>
+                    <h4>I need more money</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                  </li>
+                  <li>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Jason Statham</h3>
+                    <h4>Knife designer</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Van Damme</h3>
+                    <h4>No English</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Sylvester Stallone</h3>
+                    <h4>Cigar Lover</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Jet Li</h3>
+                    <h4>I need more money</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                  </li>
+                  <li>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Jason Statham</h3>
+                    <h4>Knife designer</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Van Damme</h3>
+                    <h4>No English</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Sylvester Stallone</h3>
+                    <h4>Cigar Lover</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="assest/img/img-team.png" alt="">
+                    <h3>Jet Li</h3>
+                    <h4>I need more money</h4>
+                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                  </li>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="ourservices" id="services">
+        <div class="container">
+            <h1 class="black">take a look at <span>our services</span></h1>
+            <div class="bordlongtitle"></div>
+            <div class="bordtitle"></div>
+            <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p> 
+            <div class="row services">
+                <div class="col-md-3">
+                    <img src="assest/img/web-design-ico.png" alt="">
+                    <h1>Web design</h1>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assest/img/mobile-apps-ico.png" alt="">
+                    <h1>Mobile apps</h1>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assest/img/photo-ico.png" alt="">
+                    <h1>Photography</h1>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assest/img/market-ico.png" alt="">
+                    <h1>Marketing</h1>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="ourclient">
+        <div class="container">
+            <h1 class="white">SOME OF <span>OUR CLIENTS</span></h1>
+            <div class="bordlongtitle"></div>
+            <div class="bordtitle"></div>
+            <div class="row clients">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                           <li>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/chanel.png" alt="1" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/zara.png" alt="2" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/Guerlain.png" alt="3" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/lancome.png" alt="4" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/lacoste.png" alt="5" /></div>
+                            </li>
+                            <li>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/chanel.png" alt="1" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/zara.png" alt="2" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/Guerlain.png" alt="3" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/lancome.png" alt="4" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/lacoste.png" alt="5" /></div>
+                            </li>
+                            <li>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/chanel.png" alt="1" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/zara.png" alt="2" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/Guerlain.png" alt="3" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/lancome.png" alt="4" /></div>
+                                <div class="col-xs-1-5 col-sm-1-5  col-md-1-5  col-lg-1-5"><img src="assest/img/lacoste.png" alt="5" /></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ourwork" id="works">
+        <div class="container">
+            <h1 class="black">take a look at <span>our services</span></h1>
+            <div class="bordlongtitle"></div>
+            <div class="bordtitle"></div>
+            <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            <div class="filter">
+                <span>Filter by type</span>
+                <ul>
+                    <li class="active">All</li>
+                    <li>Web design</li>
+                    <li>Mobile design</li>
+                    <li>Photograpy</li>
+                </ul>
+            </div>
+            <div class="row work-row-1">
+                <div class="col-sm-6 col-md-3">
+                    <div class="block">
+                       <a href="">
+                        <div class="preview">
+                            <h1>trend and fashion</h1>
+                            <p>Website design</p>
+                            <img src="assest/img/preview-add.png"  alt="">
+                        </div>
+                        </a>
+                        <img src="assest/img/trend.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="block">
+                       <a href="">
+                        <div class="preview">
+                            <h1>trend and fashion</h1>
+                            <p>Website design</p>
+                            <img src="assest/img/preview-add.png"  alt="">
+                        </div>
+                        </a>
+                        <img src="assest/img/trend.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="block">
+                       <a href="">
+                        <div class="preview">
+                            <h1>trend and fashion</h1>
+                            <p>Website design</p>
+                            <img src="assest/img/preview-add.png"  alt="">
+                        </div>
+                        </a>
+                        <img src="assest/img/trend.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="block">
+                       <a href="">
+                        <div class="preview">
+                            <h1>trend and fashion</h1>
+                            <p>Website design</p>
+                            <img src="assest/img/preview-add.png"  alt="">
+                        </div>
+                        </a>
+                        <img src="assest/img/trend.png" class="img-responsive" alt="">
+                    </div>
+                    </div>
+                </div>
+            <div class="row work-row-2" style="margin-top: 20px;">
+                <div class="col-sm-6 col-md-3"><div class="image"><a href=""><img class="unlimited img-responsive" src="assest/img/unlimited.png" alt=""></a></div></div>
+                <div class="col-sm-6 col-md-3"><div class="image"><a href=""><img class="unlimited img-responsive" src="assest/img/unlimited.png" alt=""></a></div></div>
+                <div class="col-sm-6 col-md-3"><div class="image"><a href=""><img class="unlimited img-responsive" src="assest/img/unlimited.png" alt=""></a></div></div>
+                <div class="col-sm-6 col-md-3"><div class="image"><a href=""><img class="unlimited img-responsive" src="assest/img/unlimited.png" alt=""></a></div></div>
+            </div>
+            <div class="row work-row-3" style="margin-top: 20px;">
+                <div class="col-sm-6 col-md-3 " ><a href=""><img src="assest/img/phone-image.png" class="img-responsive img-work" alt=""></a></div>
+                <div class="col-sm-6 col-md-3"><a href=""><img src="assest/img/phone-image.png" class="img-responsive img-work" alt=""></a></div>
+                <div class="col-sm-6 col-md-3"><a href=""><img src="assest/img/phone-image.png" class="img-responsive img-work" alt=""></a></div>
+                <div class="col-sm-6 col-md-3"><a href=""><img src="assest/img/phone-image.png" class="img-responsive img-work" alt=""></a></div>
+            </div>
+            </div>
+        </div>
+        
+    <div class="testimonials" id="testimonials">
+        <div class="container">
+            <h1 class="white"><span>our clients’ </span>testimonials</h1>
+            <div class="bordlongtitle"></div>
+            <div class="bordtitle"></div>
+            <div class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                       <li>
+                                <h3>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.s</h3>
+                                <p><span>Dean Martin</span>, CEO Acme Inc.</p>
+                        </li>
+                        <li>
+                                <h3>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.s</h3>
+                                <p><span>Dean Martin</span>, CEO Acme Inc.</p>
+                        </li>
+                        <li>
+                                <h3>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.s</h3>
+                                <p><span>Dean Martin</span>, CEO Acme Inc.</p>
+                        </li>
+                    </ul>   
+               </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-us" id="contact">
+        <div class="container-contact">
+            <h1 class="black">take a look at <span>our services</span></h1>
+            <div class="bordlongtitle"></div>
+            <div class="bordtitle"></div>
+            <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
+            <form action="">
+                <div class="col-md-6">
+                    <label for="Name">Name<span>*</span></label>
+                    <input type="text" name="Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="Email">Email address<span>*</span></label>
+                    <input type="text" name="Email">
+                </div>
+                <div class="col-md-12 message">
+                    <label for="message">Message<span>*</span></label>
+                    <textarea wrap="soft" rows="8">
+                    </textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <footer>
+        <div class="container">
+            <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014 <span>SPIRIT8</span></p>
+            <ul class="sociaty">
+                <a href="">
+                    <li><img src="assest/img/fb-ico.png" alt=""></li>
+                </a>
+                <a href="">
+                    <li><img src="assest/img/tw-ico.png" alt=""></li>
+                </a>
+                <a href="">
+                    <li><img src="assest/img/google.png" alt=""></li>
+                </a>
+                <a href="">
+                    <li><img src="assest/img/linkedin.png" alt=""></li>
+                </a>
+                <a href="">
+                    <li><img src="assest/img/dribbble.png" alt=""></li>
+                </a>
+            </ul>     
+        </div> 
+    </footer>
+    <script src="assest/js/jquery.js"></script>
+    <script src="assest/js/bootstrap.js"></script>
+    <script src="assest/js/control.js"></script>
+    <script src="assest/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "slide",
+            directionNav: false
+          });
+        });
+    </script>
+    <script type="text/javascript">
+         $(document).ready(function() {
+
+        $('a[href^="#"]').click(function(){
+                var el = $(this).attr('href');
+                $('body').animate({
+                    scrollTop: $(el).offset().top}, 1000);
+                return false; 
+        });
+
+        });
+    </script>
+  </body>
+</html>

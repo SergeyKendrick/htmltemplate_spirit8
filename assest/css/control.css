@@ -1,0 +1,175 @@
+.control-arrow, .control-arrow-complete {
+    position: absolute;
+    z-index: 20;
+    left: 10%;
+    top: 20%;
+}
+
+.control-arrow-complete {
+    top: 10%;
+    left: 2%;
+    opacity: 0;
+}
+
+.control-arrow span, .control-arrow-complete span {
+    font-size: 30px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #007fff;
+}
+
+/*--------------Base style---------------*/
+
+.yellow-control {
+    background-color: #ffad00;
+}
+
+.orange-control {
+    background-color: #ff6d00;
+}
+
+.red-control {
+    background-color: #de002b;
+}
+
+.purpure-control {
+    background-color: #b82945;
+}
+
+.orchid-control {
+    background-color: #d75cb6;
+}
+
+.navy-control {
+    background-color: #006dca;
+}
+
+.blue-control {
+    background-color: #01aae3;
+}
+
+.green-sea-control {
+    background-color: #01b1af;
+}
+.green-control {
+    background-color: #009f4f;
+}
+
+.irish-green-control {
+    background-color: #6db900;
+}
+
+.black-control {
+    background-color: #000;
+}
+
+/*----------------Platform Style----------------*/
+
+.controlplatform {
+    position: fixed;
+    transition: 1s;
+    width: 0;
+    height: 100%;  
+    z-index: 15;
+}
+
+.menu-platform {
+    position: relative;
+    z-index: 15;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.menu-platform .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.menu-platform .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.platform {
+    width: 100%;
+    display: none;
+    clear: both;
+}
+
+.platform h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.change-header-color ul {
+    list-style-type: none;
+}
+
+.change-header-color ul li {
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.change-header-color ul li:hover {
+    cursor: pointer;
+}
+
+.change-header-color ul li:last-child {
+    width: 50%;
+}
+
+.change-header-color ul li input {
+    width: 100%;
+}
+
+/*-------------Select File Header ----------------*/
+
+.select-file { 
+     position: relative;
+     overflow: hidden; 
+     width: 70%; 
+     height: 40px; 
+     background: #6da047;
+     border-radius: 3px;
+     padding: 8px 4px;
+     color: #fff;
+     text-align: center;
+    margin: auto;
+}
+.select-file:hover {
+     background: #7aad55;
+}
+.select-file input[type="file"]{
+    display: none; 
+}
+.select-file label {
+     display: block;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+.select-filespan {
+     line-height: 24px;
+}
+
+.dop-setting {
+    display: none;
+    width: 60%;
+    margin: auto;
+}
